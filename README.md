@@ -1,5 +1,4 @@
 # hello-world
-A shot at programming
 
 Hi everybody!
 
