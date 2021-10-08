@@ -1,0 +1,13 @@
+list1 = []
+x = "yes"
+while x == "yes":
+    a = int(input("Enter the number of elements you want: "))
+    for p in range(0,a):
+        e = int(input("Enter element: "))
+        if e > 0:
+            list1.append(e)
+    print("The positive numbers in your list are", list1)
+    list1 = []
+    x = str(input("Do you wish to create another list? Answer with 'yes' or 'no': "))
+    while not x == "yes" and not x == "no":
+        x = str(input("Invalid answer! Please type 'yes' or 'no': "))
