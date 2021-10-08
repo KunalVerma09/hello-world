@@ -1,0 +1,20 @@
+print("Fibonacci Sequence")
+x = "yes"
+while x == "yes":
+    n = int(input("Please enter the number of iterations you would like in the sequence: "))
+    while n < 1:
+        print("Invalid number!")
+        n = int(input("Please enter a number greater than or equal to 1: "))
+        if n > 0:
+            break
+    a = 0
+    b = 1
+    while n > 0:
+        print(a)
+        n = n - 1
+        c = a + b
+        a = b
+        b = c
+    x = str(input("If you would like to go again enter 'yes', otherwise enter 'no': "))
+    while not x == "yes" and not x == "no":
+        x = str(input("Invalid answer! Enter 'yes' or 'no': "))
