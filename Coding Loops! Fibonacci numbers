@@ -5,8 +5,6 @@ while x == "yes":
     while n < 1:
         print("Invalid number!")
         n = int(input("Please enter a number greater than or equal to 1: "))
-        if n > 0:
-            break
     a = 0
     b = 1
     while n > 0:
@@ -16,5 +14,5 @@ while x == "yes":
         a = b
         b = c
     x = str(input("If you would like to go again enter 'yes', otherwise enter 'no': "))
-    while not x == "yes" and not x == "no":
-        x = str(input("Invalid answer! Enter 'yes' or 'no': "))
+    while x != "yes" and x != "no":
+        x = str(input("Invalid answer!\nIf you would like to go again enter 'yes', otherwise enter 'no': "))
